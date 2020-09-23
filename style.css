@@ -1,10 +1,11 @@
+/* The width and height properties include the content, padding, and border, but do not include the margin.  */
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  background-color: white;
+  background-color: lightgray;
 }
 
 .parallax {
@@ -36,7 +37,7 @@ body {
   width: 100%;
 }
 
-.parallax__layer header {
+.parallax__layer aside {
   position: absolute;
   max-width: 500px;
   top: 20%;
@@ -100,28 +101,28 @@ body {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (768px and up) */
 @media only screen and (max-width: 768px) {
   .parallax__layer img {
     width: 180%;
   }
 }
 
-/* Medium devices (phones, 600px and up) */
+/* Medium devices (600px and up) */
 @media only screen and (max-width: 600px) {
   .parallax__layer img {
     width: 200%;
   }
 }
 
-/* Small devices (phones, 300px and up) */
+/* Small devices (400px and up) */
 @media only screen and (max-width: 400px) {
   .parallax__layer img {
     width: 250%;
   }
 }
 
-/* Extra small devices (phones, 300px and up) */
+/* Extra small devices (300px and up) */
 @media only screen and (max-width: 300px) {
   .parallax__layer img {
     width: 300%;
