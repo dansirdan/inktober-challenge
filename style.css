@@ -94,10 +94,9 @@ body {
   transform: translateZ(0px) scale(1);
 }
 
-/* Extra small devices (phones, 300px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .parallax__layer img {
-    width: 200%;
+    width: 130%;
   }
 }
 
@@ -105,5 +104,26 @@ body {
 @media only screen and (max-width: 768px) {
   .parallax__layer img {
     width: 180%;
+  }
+}
+
+/* Medium devices (phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .parallax__layer img {
+    width: 200%;
+  }
+}
+
+/* Small devices (phones, 300px and up) */
+@media only screen and (max-width: 400px) {
+  .parallax__layer img {
+    width: 250%;
+  }
+}
+
+/* Extra small devices (phones, 300px and up) */
+@media only screen and (max-width: 300px) {
+  .parallax__layer img {
+    width: 300%;
   }
 }
