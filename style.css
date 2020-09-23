@@ -5,7 +5,7 @@
 
 html,
 body {
-  background-color: lightgray;
+  background: linear-gradient(white, grey);
 }
 
 .parallax {
@@ -56,10 +56,15 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 2;
 }
 
+.carousel-item img {
+  max-height: 800px;
+}
+
+/* Parallax Transformations */
 .parallax__layer__0 {
   -webkit-transform: translateZ(-300px) scale(4.5);
   transform: translateZ(-300px) scale(4.5);
@@ -95,6 +100,20 @@ body {
   transform: translateZ(0px) scale(1);
 }
 
+footer {
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav p {
+  width: 100%;
+  text-align: center;
+}
+
+/* Media Queries for the parallax layers */
+/* Medium devices (992px and up) */
 @media only screen and (max-width: 992px) {
   .parallax__layer img {
     width: 130%;
