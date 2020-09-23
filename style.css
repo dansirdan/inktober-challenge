@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: white;
+}
+
+.parallax {
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 105%;
+}
+
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.parallax__layer header {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.parallax__cover {
+  background: white;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 2;
+}
+
+/* .parallax__layer__0 {
+    -webkit-transform: translateZ(-300px) scale(4);
+            transform: translateZ(-300px) scale(4);
+  } */
+
+.parallax__layer__1 {
+  -webkit-transform: translateZ(-250px) scale(3.5);
+  transform: translateZ(-250px) scale(3.5);
+}
+
+.parallax__layer__2 {
+  -webkit-transform: translateZ(-100px) scale(2);
+  transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__3 {
+  -webkit-transform: translateZ(-150px) scale(2.5);
+  transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+  -webkit-transform: translateZ(-100px) scale(2);
+  transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+  -webkit-transform: translateZ(-50px) scale(1.5);
+  transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__6 {
+  -webkit-transform: translateZ(0px) scale(1);
+  transform: translateZ(0px) scale(1);
+}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 600px) {
+  .parallax__layer img {
+    width: 200%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .parallax__layer img {
+    width: 180%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .parallax__layer img {
+    width: 160%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .parallax__layer img {
+    width: 100%;
+  }
+}
